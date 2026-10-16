@@ -1,4 +1,3 @@
 -- your code goes here
-select department_name, location 
-from departments
-where location like 'S%';
+select distinct company_name
+from works;
