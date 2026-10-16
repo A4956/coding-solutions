@@ -4,20 +4,37 @@
 
 ## Problem
 
-_Description not available._
+### Handling NULL Values
+### Task
+
+Write a query to retrieve book_id, title, author and published_year of the books which have  **NULL**  rating for their books.
+
+ **Table name** : `Library`
+
+book_id	title	author	published_year	rating
+1	The Great Gatsby	F. Scott Fitzgerald	1925	4.2
+2	To Kill a Mockingbird	Harper Lee	1960	NULL
+3	1984	George Orwell	1949	4.8
+4	The Catcher in the Rye	J.D. Salinger	1951	NULL
+5	Brave New World	Aldous Huxley	1932	4.3
+### Expected column
+- book_id
+- title
+- author
+- published_year
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T08:41:27.607Z  
+**Submitted:** 2026-10-16T08:42:49.823Z  
 
 ```sql
--- your code goes here
-select movie_name
-from cinema
-where rating >7 and rating<9;
+-- your code goes 
+select book_id, title, author,published_year
+from library
+where rating is null;
 ```
 
 ---
