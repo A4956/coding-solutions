@@ -31,7 +31,7 @@ employee_id	employee_name	company	category	department	salary
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T08:48:00.734Z  
+**Submitted:** 2026-10-16T08:48:06.676Z  
 
 ```sql
 -- your code goes here
