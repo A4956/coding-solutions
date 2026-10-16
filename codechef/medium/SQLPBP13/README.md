@@ -26,12 +26,12 @@ employee_id	company_name	salary
 
 ## Solution
 
-**Language:** C++  
+**Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T08:36:08.908Z  
+**Submitted:** 2026-10-16T08:36:14.663Z  
 
-```cpp
+```sql
 -- your code goes here
 select distinct company_name
 from works;
