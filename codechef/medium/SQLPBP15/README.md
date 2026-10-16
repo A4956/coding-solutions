@@ -30,7 +30,7 @@ department_id	department_name	location
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T08:35:27.583Z  
+**Submitted:** 2026-10-16T08:35:33.490Z  
 
 ```sql
 -- your code goes here
