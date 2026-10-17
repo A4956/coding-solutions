@@ -4,23 +4,49 @@
 
 ## Problem
 
-_Description not available._
+### Player Details
+### Task
+
+Write a query to retrieve the details of the  **last five matches**  played, including the match ID, the names of the players who participated, the name of the winning player, match date, and the final score of the winner.
+
+There are two tables named  **`Players`**  and  **`Matches`**.
+
+### Expected Output Columns:
+- match_id
+- player_1
+- player_2
+- winner
+- match_date
+- score
+### Expected Output:
+
+```
+┌──────────┬──────────┬──────────┬────────┬────────────┬───────┐
+│ match_id │ player_1 │ player_2 │ winner │ match_date │ score │
+├──────────┼──────────┼──────────┼────────┼────────────┼───────┤
+│ 106      │ Frank    │ Hank     │ Frank  │ 2024-01-29 │ 1450  │
+│ 101      │ Alice    │ Bob      │ Bob    │ 2024-01-25 │ 1500  │
+│ 110      │ David    │ Eve      │ David  │ 2024-01-24 │ 1600  │
+│ 108      │ Jack     │ Alice    │ Jack   │ 2024-01-19 │ 1400  │
+│ 103      │ Eve      │ Bob      │ Bob    │ 2024-01-17 │ 1500  │
+└──────────┴──────────┴──────────┴────────┴────────────┴───────┘
+
+```
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-17T06:32:18.536Z  
+**Submitted:** 2026-10-17T06:55:28.806Z  
 
 ```sql
 -- your code goes here
-select distinct p.player_name, p.score
-from players p
-join matches m on m.winner=p.player_name
-order by p.score desc
-limit 3;
-
+select m.Match_id, m.Player_1, m.player_2, m.winner, m.match_date,p.score
+from matches m
+join players p on p.player_name=m.winner
+order by m.match_date desc
+limit 5;
 ```
 
 ---
