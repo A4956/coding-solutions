@@ -38,7 +38,7 @@ There are two tables named  **`Players`**  and  **`Matches`**.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-17T06:55:28.806Z  
+**Submitted:** 2026-10-17T06:55:35.637Z  
 
 ```sql
 -- your code goes here
