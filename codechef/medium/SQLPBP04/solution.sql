@@ -1,5 +1,6 @@
 -- your code goes here
-select author_id, author_name, publication_name
-from views
-where view_count=0
-order by author_id asc;
+select distinct p.player_name, p.score
+from players p
+join matches m on m.winner=p.player_name
+order by p.score desc
+limit 3;
