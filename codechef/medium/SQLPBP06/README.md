@@ -28,14 +28,17 @@ article_id	author_id	author_name	viewer_id	view_count	publication_name
 
 ## Solution
 
-**Language:** C++  
+**Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-17T06:24:17.934Z  
+**Submitted:** 2026-10-17T06:24:23.991Z  
 
-```cpp
+```sql
 -- your code goes here
-select author_id, author_name, 
+select author_id, author_name, publication_name
+from views
+where view_count=0
+order by author_id asc;
 ```
 
 ---
