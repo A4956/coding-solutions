@@ -26,7 +26,7 @@ The **CITY** and **COUNTRY** tables are described as follows:
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-18T09:15:54.681Z  
+**Submitted:** 2026-10-18T09:16:03.259Z  
 
 ```sql
 select ci.name
