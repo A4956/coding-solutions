@@ -1,5 +1,4 @@
-/*
-Enter your query here.
-*/select name 
-from employee
-where salary > 2000 and months <10
+select sum(ci.population)
+from city ci
+INNER JOIN country co on ci.countrycode=co.code
+where co.continent= "Asia";
