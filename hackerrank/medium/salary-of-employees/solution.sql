@@ -1,5 +1,5 @@
 /*
 Enter your query here.
-*/select name
+*/select name 
 from employee
-order by name ASC;
+where salary > 2000 and months <10
