@@ -1,4 +1,4 @@
-select sum(ci.population)
+select ci.name
 from city ci
-INNER JOIN country co on ci.countrycode=co.code
-where co.continent= "Asia";
+join country co on ci.countrycode= co.code
+where continent='Africa';
