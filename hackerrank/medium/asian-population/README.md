@@ -1,4 +1,4 @@
-# Employee Salaries
+# Population Census
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -27,14 +27,13 @@ The **CITY** and **COUNTRY** tables are described as follows:
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-18T09:01:41.592Z  
+**Submitted:** 2026-10-18T09:09:34.066Z  
 
 ```sql
-/*
-Enter your query here.
-*/select name 
-from employee
-where salary > 2000 and months <10
+select sum(ci.population)
+from city ci
+INNER JOIN country co on ci.countrycode=co.code
+where co.continent= "Asia";
 
 ```
 
