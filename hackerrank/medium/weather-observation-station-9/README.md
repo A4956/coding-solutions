@@ -1,4 +1,4 @@
-# Weather Observation Station 8
+# Weather Observation Station 9
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -21,14 +21,14 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T06:29:35.980Z  
+**Submitted:** 2026-10-19T06:31:16.127Z  
 
 ```sql
 /*
 Enter your query here.
-*/ select distinct city
-from station
-where city regexp '^[aeiou]' and city regexp '[aeiou]$'
+*/select distinct city
+from station 
+where city not REGEXP '^[aeiou]';
 
 ```
 
