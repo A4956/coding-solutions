@@ -1,5 +1,5 @@
 /*
 Enter your query here.
 */select distinct city
-from station 
-where city not REGEXP '^[aeiou]';
+from station
+where city not REGEXP '[aeiou]$';
