@@ -1,4 +1,4 @@
-# Japanese Cities' Names
+# Weather Observation Station 5
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -27,12 +27,19 @@ where **LAT\_N** is the northern latitude and **LONG\_W** is the western longitu
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T06:07:04.353Z  
+**Submitted:** 2026-10-19T06:14:04.244Z  
 
 ```sql
-select name
-from city 
-where countrycode="JPN";
+/*
+Enter your query here.
+*/select city, length(city)
+from station
+order by length(city) ASC, city ASC
+limit 1;
+select city, length(city)
+from station
+order by length(city) DESC, city ASC
+limit 1;
 
 ```
 
