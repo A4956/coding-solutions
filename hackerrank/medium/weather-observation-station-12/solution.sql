@@ -1,4 +1,4 @@
-/*
-Enter your query here.
-*/select city, state
-from station;
+select distinct city
+from station
+where city not REGEXP '^[aeiou]'
+ AND city not REGEXP '[aeiou]$';
