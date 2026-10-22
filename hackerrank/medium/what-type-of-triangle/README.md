@@ -30,7 +30,7 @@ Each row in the table denotes the lengths of each of a triangle's three sides.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-22T05:53:27.537Z  
+**Submitted:** 2026-10-22T05:53:28.091Z  
 
 ```sql
 SELECT CASE 
